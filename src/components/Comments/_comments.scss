@@ -1,0 +1,24 @@
+.comments-container {
+  margin: $margin2 auto;
+  width: 85%;
+  color: $dark-green;
+  &__error {
+    @extend %error;
+  }
+  &__top-line {
+    margin: $margin2 0;
+    border: 0.4rem solid $dark-green;
+  }
+  &__more-btn {
+    @include btn;
+    background-color: $btn-color-2;
+    color: $dark-green;
+  }
+  &__more-btn:hover {
+    background-color: $btn-color-1;
+    color: $background-color;
+  }
+  @include respond(point2-max) {
+    width: 98%;
+  }
+}

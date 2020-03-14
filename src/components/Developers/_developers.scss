@@ -1,0 +1,23 @@
+.developers-container {
+  margin: $margin2 auto;
+  width: 85%;
+  &__error {
+    @extend %error;
+  }
+  &__btns-container {
+    @extend %pages-btns;
+  }
+  &__more-btn {
+    @include btn;
+    margin-top: 1rem;
+    background-color: $btn-color-2;
+    color: $dark-green;
+  }
+  &__more-btn:hover {
+    background-color: $btn-color-1;
+    color: $background-color;
+  }
+  @include respond(point2-max) {
+    width: 98%;
+  }
+}

@@ -1,0 +1,13 @@
+%error {
+  color: $error;
+  font-weight: bold;
+  margin-bottom: $margin2;
+  background-color: #ffdece;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+}
+
+%pages-btns {
+  display: flex;
+  justify-content: space-between;
+}

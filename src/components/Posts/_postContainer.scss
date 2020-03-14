@@ -1,0 +1,81 @@
+.post-container {
+  display: flex;
+  border-bottom: 0.5rem solid $background2;
+  background-color: $background3;
+  margin-bottom: $margin2;
+  &__left {
+    padding-top: $padding;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__right {
+    padding: $padding;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  &__title {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+  }
+  &__avatar {
+    margin: 1rem auto;
+    width: 40%;
+  }
+  &__text {
+    margin: .5rem 0 1.5rem 0;
+  }
+  &__name {
+    margin-top: 0.5rem;
+    padding: 0 0.4rem;
+    text-align: center;
+  }
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  &__btn {
+    @include btn;
+    background-color: $btn-color-2;
+    color: $dark-green;
+    margin-right: 1.5rem;
+  }
+  &__btn:hover {
+    background-color: $btn-color-1;
+    color: $background-color;
+  }
+  &__date {
+    color: #20d585;
+    font-weight: bold;
+  }
+  @include respond(point2-max) {
+    flex-direction: column;
+    &__left {
+      width: 100%;
+    }
+  }
+}
+
+.social-btn__container {
+  @include btn;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+  width: 20%;
+  border: 0.2rem solid $btn-color-2;
+  color: $dark-green;
+  &--btn {
+    margin-right: 0.5rem;
+  }
+}
+
+.social-btn__container:hover {
+  background-color: $btn-color-2;
+}
+

@@ -1,0 +1,23 @@
+.posts-form {
+  margin-bottom: $margin2;
+  display: flex;
+  flex-direction: column;
+  &__input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 0.5rem solid $background2;
+  }
+  &__input::placeholder{
+    font-weight: bold;
+    color: $background2;
+  }
+  &__btn {
+    @include btn;
+    background-color: $btn-color-1;
+    color: $background-color;
+  }
+  &__btn:hover {
+    background-color: $btn-color-2;
+    color: $dark-green;
+  }
+}

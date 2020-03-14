@@ -1,0 +1,37 @@
+.experience-table {
+  width: 100%;
+  margin-bottom: $margin2;
+  padding-bottom: 1rem;
+  color: $dark-green;
+  border-bottom: 0.3rem solid $background2;
+  &__caption {
+    font-size: 2.4rem;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  &__head {
+    background-color: $background2;
+  }
+  &__th {
+    padding: 0.5rem 0;
+  }
+}
+
+.experience-row { 
+  margin-top: 1rem;
+  text-transform: capitalize;
+  text-align: center;
+  background-color: $background3;
+  padding: 0.5rem 0;
+  &__btn {
+    @include btn;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: $error;
+    color: $background-color;
+  }
+  &__btn:hover {
+    background-color: #ffc8ac;
+    color: $dark-green;
+  }
+}

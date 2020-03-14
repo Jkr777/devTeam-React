@@ -1,0 +1,88 @@
+.dev-profile {
+  margin: $margin2 auto;
+  width: 85%;
+  &__btn {
+    background-color: $btn-color-2;
+    color: $dark-green;
+    @include btn;
+  }
+  &__btn:hover {
+    background-color: $btn-color-1;
+    color: $background-color;
+  }
+  @include respond(point2-max) {
+    width: 98%;
+  }
+}
+
+.info-top {
+  color: $dark-green;
+  background-color: $background2;
+  margin-top: $margin2;
+  padding: $padding 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__avatar {
+    width: 40%;
+  }
+  &__name {
+    margin-top: 1rem;
+    text-transform: capitalize;
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+  &__row {
+    margin-top: 0.5rem;
+    padding-bottom: 0.2rem;
+    text-transform: capitalize;
+  }
+  &__row-pre {
+    font-weight: bold;
+    text-transform: lowercase;
+    color: $green;
+  }
+  &__icons {
+    margin-top: 1rem;
+  }
+  &__social-icon {
+    margin-left: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  &__social-icon:hover path{
+    fill: $background3;  
+  }
+}
+
+.info-section {
+  margin-top: $margin2;
+  background-color: $background3;
+  border: 0.2rem solid $background2;
+  padding: $padding;
+  &__title {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: $green;
+  }
+  &__bio:first-letter {
+    text-transform: capitalize;
+  }
+  &__hr {
+    margin: 2rem 0;
+    border: 0; 
+    height: 0.3rem; 
+    background-image: -webkit-linear-gradient(left, $background-color, $background2, $background-color);
+  }
+  &__skills {
+    display: flex;
+    justify-content: center;
+  }
+  &__skill {
+    margin-left: 0.5rem;
+    text-transform: capitalize;
+  }
+}
+

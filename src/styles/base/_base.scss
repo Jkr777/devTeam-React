@@ -1,0 +1,19 @@
+:root {
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+  box-sizing: border-box;
+  @include respond(phone) { 
+    font-size: 50%; // 1rem = 8px
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.8rem;
+  background-color: $background-color;
+}
+p, h1, span {
+  word-break: break-all;
+}

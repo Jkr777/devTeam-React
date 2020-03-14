@@ -1,0 +1,26 @@
+@mixin btn {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  text-align: center;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 25rem),
+    only screen and (hover: none)
+    { @content };
+  } 
+  @if $breakpoint == point2-max {
+    @media only screen and (max-width: 35em) { @content };
+  }
+  @if $breakpoint == point1-max {
+    @media only screen and (max-width: 42em) { @content };
+  }
+  @if $breakpoint == point1-min {
+    @media only screen and (min-width: 42em) { @content };
+  }
+}

@@ -1,0 +1,38 @@
+.nav {
+  display: flex;
+  padding: $padding 0;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  &__icon {
+    cursor: pointer;
+    display: none;
+    @include respond(point1-max) {
+      display: inline;
+    }
+  }
+  &-right {
+    @include respond(point1-max) {
+      display: none;
+    }
+  }
+}
+
+.nav-left__name {  
+  color: $background-color;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: $margin2;
+  font-size: 2rem;
+}
+
+.nav-right__link {
+  color: $background-color;
+  text-decoration: none;
+  margin-left: $margin2;
+}
+
+.nav-right__link:hover {
+  color: $active-link;
+}

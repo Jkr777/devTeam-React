@@ -1,0 +1,36 @@
+.dev-info {
+  border-bottom: 0.1rem solid $background2;
+  color: $dark-green;
+  padding: $padding;
+  display: flex;
+  flex-direction: column;
+  &__avatar {
+    margin: 1rem auto;
+    width: 30%;
+  }
+}
+
+.dev-info-container {
+  display: flex;
+  flex-direction: column;
+  &__row {
+    background-color: $background2;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 0.1rem solid $dark-green;
+  }
+  &__lowercase {
+    color: $green;
+    text-transform: lowercase;
+    font-weight: bold;
+  }
+  &__link {
+    color: $btn-color-1;
+    text-decoration: none;
+  }
+  &__link:hover {
+    text-decoration: underline;
+  }
+}

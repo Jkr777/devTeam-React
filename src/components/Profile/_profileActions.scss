@@ -1,0 +1,21 @@
+.profile-actions {
+  display: flex;
+  justify-content: space-between;
+  &__btn {
+    @include btn;
+    background-color: $btn-color-2;
+    color: $dark-green;
+  }
+  &__btn:hover {
+    background-color: $btn-color-1;
+    color: $background-color;
+  }
+  @include respond(point2-max) {
+    flex-direction: column;
+    align-items: center;
+    &__btn {
+      width: 90%;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

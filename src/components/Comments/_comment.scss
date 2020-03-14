@@ -1,0 +1,55 @@
+.comment-container {
+  display: flex;
+  border-bottom: 0.5rem solid $background2;
+  background-color: $background3;
+  margin-bottom: $margin2;
+  &__left {
+    padding-top: $padding;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__avatar {
+    margin: 1rem auto;
+    width: 40%;
+  }
+  &__name {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  &__right {
+    padding: $padding;
+    width: 100%;
+  }
+  &__title {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+  }
+  &__text {
+    margin: .5rem 0 1.5rem 0;
+  }
+  &__date {
+    color: #20d585;
+    font-weight: bold;
+  }
+  &__btn {
+    @include btn;
+    background-color: $btn-color-2;
+    color: $dark-green;
+    margin-left: 1.5rem;
+  }
+  &__btn:hover {
+    background-color: $btn-color-1;
+    color: $background-color;
+  }
+  @include respond(point2-max) {
+    flex-direction: column;
+    &__left { 
+      width: 100%;
+    }
+  }
+}
