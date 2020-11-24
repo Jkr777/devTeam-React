@@ -1,5 +1,4 @@
-* For this project I used Visual Studio Code, my OS is Ubuntu 18.04.
-* heroku app link:  https://dev-team0000.herokuapp.com/
+
 
 * In this project you can find a team to help you with a project. I use Gravatar to add icons. A user can create, delete or update a profile. A user can add or delete experience. You can also delete the account. Users are allowed to see other profiles. You can create a new post or remove a post. You can like, unlike a post and add or remove a comment. You have email/password authentication.
 
